@@ -1,0 +1,43 @@
+@media screen and (max-width: 768px) {
+  header .menu-toggle {
+    display: block;
+  }
+  header .menu-toggle:hover {
+    color: #fff;
+  }
+  header nav {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 15vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) 100%);
+    top: 57px;
+    right: 0px;
+    transition: 0.5s;
+  }
+  header nav.active {
+    display: block;
+  }
+  header nav a {
+    display: flex;
+    flex-direction: column;
+    padding: 0.2rem;
+    text-align: center;
+  }
+  .filme-principal {
+    height: 30rem;
+  }
+}
+
+@media screen and (max-width: 525px) {
+  .filme-principal {
+    height: 30rem;
+  }
+  .filme-principal .descricao {
+    width: 100%;
+  }
+  .botao {
+    margin-top: 10px;
+    width: 14rem;
+  }
+}
